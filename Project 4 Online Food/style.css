@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Logo */
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    width: 50px;
+    
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar ul li a{
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px ;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 476px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./pexels-marvin-ozz-2474661.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 3px 6px;
+    padding: 20px;
+    border-radius: 11px;
+    background-color: #efefef;
+}
+#services .box img{
+    height: 104px;
+    padding: 23px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/* Cient Section */
+
+#client-section::before{
+    display: flex;
+    content: "";
+    position: absolute;
+    background: url('./pexels-rajesh-tp-1600711.jpg') center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.25;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#clients img{
+    height: 70px;
+    padding: 15px;
+}
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./contact_us.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+
+}
+
+#contact-box form{
+    width: 4 0%;
+    
+}
+
+#contact-box label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 45px;
+    padding: 15px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 35px;
+    padding: 15px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 30px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(136, 4, 4);
+}
+
+.center{
+    text-align: center;
+}
+
+.formbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 30px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px auto;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formbtn:hover{
+    background-color: rgb(136, 4, 4);
+}
+
+
+
+/* ............ ORDER NOW ............ */
+
+#order_home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 476px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Services Section */
+#order-services{
+    display: flex;
+    margin: 30px 110px;
+}
+#order-services .box{
+    
+    margin: 3px 3px;
+    padding: 20px;
+    border-radius: 11px;
+    background-color: #efefef;
+}
+#order-services .box img{
+    height: 104px;
+    padding: 23px;
+    margin: auto;
+    display: block;
+}
+
+.cart-btn a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.cart-btn {
+    padding: 6px 49px;
+    border: 2px solid white;
+    background-color: rgb(197, 0, 0);
+    margin: 17px 27px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-btn:hover{
+    background-color: rgb(136, 4, 4);
+}
+
+.menu-center{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    color: rgb(17, 104, 0);
+}
+
+#order-services-container::before{
+    content: "";
+    position: absolute;
+    background: url('./pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 81%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
